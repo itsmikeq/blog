@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<<<<<<< HEAD
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -17,3 +18,39 @@
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+=======
+<div class="article">
+  <div class="title">
+    <h2>
+      <!-- <strong>Title:</strong> -->
+      <%= @article.title %>
+    </h2>
+
+    <p>
+      <strong>Author:</strong>
+      <%= @article.author %>
+    </p>
+
+    <p>
+      <strong>Published on:</strong>
+      <%= @article.created_at.localtime.strftime("%I:%M %p, %b %d, %Y") %>
+    </p>
+
+    <p>
+      <strong>Updated on:</strong>
+      <%= @article.updated_at.localtime.strftime("%I:%M %p, %b %d, %Y") %>
+    </p>
+  </div>
+
+<div class="content">
+  <p>
+    <!-- <strong>Content:</strong> -->
+    <%= @article.content %>
+  </p>
+</div>
+
+</div>
+
+<!-- <%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %> -->
+>>>>>>> Update
